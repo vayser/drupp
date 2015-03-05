@@ -1,0 +1,50 @@
+@import "bootstrap.less";
+@import "bootstrap-tagsinput.less";
+
+.typeahead {
+    position: relative;
+    &__input {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        border-bottom: 1px solid black;
+        width: 100%;
+        &:focus {
+            box-shadow: none;
+            border-color: green;
+        }
+        &_selected {
+            border-bottom: 2px solid green;
+        }
+    }
+    &__reset {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .twitter-typeahead {
+        display: block !important;
+    }
+}
+
+.step {
+    padding-left: 0;
+    margin-bottom: 10px;
+    position: relative;
+    .step__number {
+        display: block;
+        position: absolute;
+        left: -42px;
+        top: 0;
+        font-weight: bold;
+        font-size: 16px;
+        height: 38px;
+        width: 38px;
+        color: #999;
+        text-align: center;
+        padding: 6px;
+        background: #fff;
+        border: 3px solid #eee;
+        border-radius: 32px;
+    }
+}
